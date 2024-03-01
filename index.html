@@ -11,12 +11,13 @@
   <header>
     <nav>
       <ul>
-        <li><a href="#">Início</a></li>
-        <li><a href="#">Cardápio</a></li>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="cardapio.html">Cardápio</a></li>
         <li><a href="#">Sobre Nós</a></li>
       </ul>
     </nav>
   </header>
+  
   <div class="banner">
     <img src="img/Banner.png" alt="Banner Promocional">
     <div class="banner-content">
@@ -27,39 +28,56 @@
   </div>
 
   <section class="popular-pizzas">
-    <h2>Pizzas Mais Pedidas</h2>
-    <div class="pizza">
-      <h3>Brasil: Pizza de Calabresa</h3>
-      <p>Pizza de calabresa, queijo, cebola e molho de tomate.</p>
-    </div>
-    <div class="pizza">
-      <h3>Itália: Pizza Margherita</h3>
-      <p>Pizza com molho de tomate, queijo mussarela, tomate e manjericão.</p>
-    </div>
-
-    <div class="pizza">
-      <h3>Japão: Pizza Salmão</h3>
-      <p>Pizza com molho de tomate, queijo mussarela, tomate e salmão.</p>
-    </div>
-    <!-- Adicione mais pizzas conforme necessário -->
-  </section>
-
-  <section class="frete-promocional">
-    <img src="img/Banner2.png" alt="Promoção de Frete">
-  </section>
-
-  <section class="curiosidades">
-    <div class="container">
-      <h2>Curiosidades sobre Pizza</h2>
-      <div class="curiosity">
-        <h3>A pizza mais cara do mundo</h3>
-        <p>A pizza mais cara do mundo, chamada "Luis XIII", custa cerca de US$ 12.000 e é coberta com lagosta, camarão, caviar, e é finalizada com folhas de ouro comestíveis.</p>
-      </div>
-      <div class="curiosity">
-        <h3>Origem da pizza Margherita</h3>
-        <p>A pizza Margherita foi criada em 1889, em homenagem à rainha Margherita Teresa Giovanni, e possui as cores da bandeira italiana: vermelho (molho de tomate), branco (queijo mussarela) e verde (manjericão).</p>
+    <h2>Pizzas Mais Vendidas</h2>
+    <div class="pizza-card">
+      <img src="img/Pizza.png" alt="Pizza Margherita">
+      <div class="pizza-info">
+        <h3>Pizza Margherita</h3>
+        <p>Pizza com molho de tomate, queijo mussarela, tomate e manjericão.</p>
+        <span class="price">R$ 40,00</span>
       </div>
     </div>
+    <div class="pizza-card">
+      <img src="img/Pizza.png" alt="Pizza Salmão">
+      <div class="pizza-info">
+        <h3>Pizza Salmão</h3>
+        <p>Pizza com molho de tomate, queijo mussarela, tomate e salmão.</p>
+        <span class="price">R$ 45,00</span>
+      </div>
+    </div>
+    <!-- Adicione mais cards conforme necessário -->
+  </section>
+
+  <section class="banner-section">
+    <!-- Espaço para o banner de 1080x1080px -->
+    <img src="img/Banner2.png" alt="Banner Promocional">
+  </section>
+
+  <section class="customer-feedback">
+    <h2>Comentários dos Clientes</h2>
+    <div class="feedback-card">
+      <div class="feedback-info">
+        <p>A melhor pizza que já comi na vida!!!! Recomendo d+++++</p>
+        <span class="author">- João Silva</span>
+      </div>
+    </div>
+    <div class="feedback-card">
+      <div class="feedback-info">
+        <p>Combinado com um bom vinho, essa pizza acompanhou a melhor noite da minha vida!!</p>
+        <span class="author">- Júlia Schärbeck</span>
+      </div>
+    </div>
+    <!-- Adicione mais cards conforme necessário -->
+  </section>
+
+  <section class="customer-info">
+    <h2>Deixe seu Comentário</h2>
+    <form action="#" method="post">
+      <input type="text" name="name" placeholder="Seu Nome" required>
+      <input type="email" name="email" placeholder="Seu Email" required>
+      <textarea name="comment" placeholder="Seu Comentário" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
   </section>
 
   <footer>

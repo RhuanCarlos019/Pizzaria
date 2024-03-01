@@ -1,173 +1,226 @@
+/* Reset de estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Oswald', sans-serif;
-  }
-  
-  header {
-    background-color: #158041; /* Verde */
-    padding: 30px;
-    text-align: center; /* Centraliza o texto */
-  }
-  
-  nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  nav ul li {
-    display: inline-block;
-    margin-right: 20px;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 20px;
-    position: relative;
-    transition: color 0.3s, box-shadow 0.3s;
-    font-style: italic; /* Deixa a fonte itálica */
-  }
-  
-  nav ul li a:hover {
-    color: #85d18f; /* Um pouco mais escura */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Box shadow para destacar */
-  }
-  
-  .banner {
-    position: relative;
-    width: 100%;
-    height: 300px; /* Ajuste a altura conforme necessário */
-    overflow: hidden;
-  }
-  
-  .banner img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Para manter a proporção da imagem */
-  }
-  
-  .banner-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
-  }
-  
-  .banner-content h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-  }
-  
-  .banner-content p {
-    font-size: 18px;
-    margin-bottom: 20px;
-  }
-  
-  .button {
-    display: inline-block;
-    background-color: #e70b0b;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-  }
-  
-  .button:hover {
-    background-color: #0e5f2d;
-  }
+  font-family: 'Oswald', sans-serif;
+}
 
-  .popular-pizzas {
-    padding: 50px 20px;
-    background-color: #f9f9f9; /* Cor de fundo para destacar a seção */
-  }
-  
-  .popular-pizzas h2 {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  
-  .pizza {
-    margin-bottom: 20px;
-    padding: 20px;
-    background-color: #ffbaba;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .pizza h3 {
-    margin-top: 0;
-  }
-  
-  .pizza p {
-    margin-bottom: 0;
-  }
+/* Estilos para o header */
+header {
+  background-color: #158041; /* Verde escuro */
+  padding: 20px;
+  text-align: center;
+}
 
-  .frete-promocional {
-    text-align: center;
-    margin-top: 50px;
-  }
-  
-  .frete-promocional img {
-    width: 100%;
-    max-width: 1080px; /* Define a largura máxima para a imagem */
-  }
+header nav ul {
+  list-style: none;
+}
 
-  .curiosidades {
-    background-color: #f2f2f2; /* Cor de fundo para destacar a seção */
-    padding: 50px 20px;
-  }
-  
-  .curiosidades .container {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  .curiosidades h2 {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  
-  .curiosity {
-    margin-bottom: 30px;
-  }
-  
-  .curiosity h3 {
-    margin-top: 0;
-  }
-  
-  .curiosity p {
-    margin-bottom: 0;
-  }
+header nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
 
-  /* Estilos para o footer */
+header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  font-style: italic;
+  transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+  color: #85d18f; /* Verde mais claro */
+}
+
+/* Estilos para o banner */
+.banner {
+  position: relative;
+  width: 100%;
+  height: 400px; /* Ajuste a altura conforme necessário */
+  overflow: hidden;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.banner-content h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.banner-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.button {
+  display: inline-block;
+  background-color: #e70b0b; /* Vermelho */
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #0e5f2d; /* Verde escuro */
+}
+
+/* Estilos para os cards de pizzas */
+.popular-pizzas {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.popular-pizzas h2 {
+  margin-bottom: 30px;
+}
+
+.pizza-card {
+  display: inline-block;
+  width: calc(33.33% - 40px); /* Distribui igualmente em 3 colunas com espaço entre eles */
+  margin: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.pizza-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+}
+
+.pizza-info {
+  padding: 20px;
+}
+
+.pizza-info h3 {
+  margin-top: 0;
+}
+
+.price {
+  display: block;
+  font-weight: bold;
+}
+
+/* Estilos para a seção do banner */
+.banner-section {
+  text-align: center;
+}
+
+.banner-section img {
+  max-width: 100%;
+  height: auto;
+  max-height: 980px;
+}
+
+/* Estilos para os cards de feedback */
+.customer-feedback {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.customer-feedback h2 {
+  margin-bottom: 30px;
+}
+
+.feedback-card {
+  display: inline-block;
+  width: calc(33.33% - 40px); /* Distribui igualmente em 3 colunas com espaço entre eles */
+  margin: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.feedback-info {
+  padding: 20px;
+}
+
+.feedback-info p {
+  margin-bottom: 10px;
+}
+
+.feedback-info .author {
+  font-style: italic;
+}
+
+/* Estilos para o formulário de informações do cliente */
+.customer-info {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.customer-info h2 {
+  margin-bottom: 30px;
+}
+
+.customer-info form input,
+.customer-info form textarea,
+.customer-info form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.customer-info form button {
+  background-color: #e70b0b; /* Vermelho */
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.customer-info form button:hover {
+  background-color: #0e5f2d; /* Verde escuro */
+}
+
+/* Estilos para o footer */
 footer {
-    background-color: #df1802; /* Cor vermelha */
-    padding: 20px;
-  }
-  
-  footer nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  footer nav ul li {
-    display: inline-block;
-    margin-right: 20px;
-  }
-  
-  footer nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 16px;
-    transition: color 0.3s;
-  }
-  
-  footer nav ul li a:hover {
-    color: #eee; /* Um pouco mais claro ao passar o mouse */
-  }
+  background-color: #df1802; /* Vermelho escuro */
+  padding: 20px;
+}
+
+footer nav ul {
+  list-style: none;
+}
+
+footer nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+footer nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+footer nav ul li a:hover {
+  color: #eee; /* Mais claro ao passar o mouse */
+}

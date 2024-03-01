@@ -1,0 +1,114 @@
+/* Reset de estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Oswald', sans-serif;
+}
+
+header {
+  background-color: #158041; /* Verde */
+  padding: 30px;
+  text-align: center; /* Centraliza o texto */
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  position: relative;
+  transition: color 0.3s, box-shadow 0.3s;
+  font-style: italic; /* Deixa a fonte itálica */
+}
+
+nav ul li a:hover {
+  color: #85d18f; /* Um pouco mais escura */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Box shadow para destacar */
+}
+
+/* Estilos para o cardápio */
+.menu-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 50px 20px;
+}
+
+.menu-item {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 0 20px 20px;
+  max-width: 300px;
+  overflow: hidden;
+}
+
+.menu-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+}
+
+.item-info {
+  padding: 20px;
+}
+
+.item-info h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.item-info p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.price {
+  display: block;
+  font-weight: bold;
+  font-size: 18px;
+  color: #333;
+  text-align: right;
+}
+/* Estilos para o footer */
+footer {
+  background-color: #c00404;
+  padding: 20px;
+}
+
+footer nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+footer nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+footer nav ul li:last-child {
+  margin-right: 0;
+}
+
+footer nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+}
