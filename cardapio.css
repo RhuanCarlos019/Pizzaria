@@ -87,6 +87,22 @@ nav ul li a:hover {
   color: #333;
   text-align: right;
 }
+
+/* Adicionando estilo para o botão de compra */
+.buy-button {
+  background-color: #158041; /* Verde */
+  color: #fff;
+  border: none;
+  border-radius: 20px; /* Arredonda o botão */
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.buy-button:hover {
+  background-color: #85d18f; /* Verde mais claro */
+}
+
 /* Estilos para o footer */
 footer {
   background-color: #c00404;

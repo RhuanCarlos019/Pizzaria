@@ -97,7 +97,7 @@ header nav ul li a:hover {
 .pizza-card {
   display: inline-block;
   width: calc(33.33% - 40px); /* Distribui igualmente em 3 colunas com espaço entre eles */
-  margin: 20px;
+  margin: 10px;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -166,61 +166,3 @@ header nav ul li a:hover {
   font-style: italic;
 }
 
-/* Estilos para o formulário de informações do cliente */
-.customer-info {
-  padding: 50px 20px;
-  text-align: center;
-}
-
-.customer-info h2 {
-  margin-bottom: 30px;
-}
-
-.customer-info form input,
-.customer-info form textarea,
-.customer-info form button {
-  display: block;
-  width: 100%;
-  margin-bottom: 20px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.customer-info form button {
-  background-color: #e70b0b; /* Vermelho */
-  color: white;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.customer-info form button:hover {
-  background-color: #0e5f2d; /* Verde escuro */
-}
-
-/* Estilos para o footer */
-footer {
-  background-color: #df1802; /* Vermelho escuro */
-  padding: 20px;
-}
-
-footer nav ul {
-  list-style: none;
-}
-
-footer nav ul li {
-  display: inline-block;
-  margin-right: 20px;
-}
-
-footer nav ul li a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 16px;
-  transition: color 0.3s;
-}
-
-footer nav ul li a:hover {
-  color: #eee; /* Mais claro ao passar o mouse */
-}
